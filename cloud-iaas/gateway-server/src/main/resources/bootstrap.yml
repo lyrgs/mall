@@ -1,0 +1,38 @@
+spring:
+    application:
+        name: gateway-server
+    cloud:
+        nacos:
+            server-addr: 192.168.112.141:8848
+            username: nacos
+            password: nacos
+            discovery:
+                namespace: e814735b-a248-41f6-a445-7dc8515e7529
+                group: A_GROUP
+                service: ${spring.application.name}
+            config:
+                namespace: ${spring.cloud.nacos.discovery.namespace}
+                group: ${spring.cloud.nacos.discovery.group}
+                prefix: ${spring.application.name}
+                file-extension: yml
+    profiles:
+        active: dev
+
+#################### nacos远程配置文件 ####################
+#server:
+#    port: 80
+#spring:
+#    cloud:
+#        gateway:
+#            discovery:
+#                locator:
+#                    enabled: true # 从nacos中获取服务信息
+#    data:
+#        redis:
+#            host: 192.168.112.141
+#            port: 6380
+#gateway:
+#    white:
+#        allow-urls:
+#            - /doLogin
+#            - /doLogout
