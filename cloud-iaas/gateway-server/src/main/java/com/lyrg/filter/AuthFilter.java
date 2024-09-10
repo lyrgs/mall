@@ -2,7 +2,7 @@ package com.lyrg.filter;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lyrg.bean.Result;
+import com.lyrg.model.Result;
 import com.lyrg.config.WhiteUrlsConfig;
 import com.lyrg.constant.AuthConstants;
 import com.lyrg.constant.BussinessEnum;

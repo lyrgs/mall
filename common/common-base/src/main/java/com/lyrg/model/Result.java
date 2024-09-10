@@ -1,4 +1,4 @@
-package com.lyrg.bean;
+package com.lyrg.model;
 
 import com.lyrg.constant.BussinessEnum;
 import io.swagger.annotations.ApiModel;
